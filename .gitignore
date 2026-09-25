@@ -1,0 +1,14 @@
+# len web: index.html + použité obrázky
+/*
+!/.gitignore
+!/README.md
+!/index.html
+!/assets/
+/assets/*
+!/assets/burrito-bowl.webp
+!/assets/burrito.webp
+!/assets/churros.webp
+!/assets/hero.webp
+!/assets/hula-bula.webp
+!/assets/quesadilla.webp
+!/assets/tacos.webp

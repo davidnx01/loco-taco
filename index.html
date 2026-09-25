@@ -1,0 +1,544 @@
+<!doctype html><html lang="sk"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Loco Taco · mexické bistro · Kapitulská 15 — neoficiálny návrh</title>
+<meta name="description" content="Mexické bistro Loco Taco na Kapitulskej 15 v Banskej Bystrici. Burrito, burrito bowl, quesadilla, tacos a churros — mäsové, vege aj vegan.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shrikhand:ital,wght@0,400&family=Rubik:ital,wght@0,400;0,500;0,600;0,700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#FCF6EB; --paper-2:#F6ECDA; --ink:#1B1B1B; --ink-2:#4A423D; --rule:rgba(27,27,27,.18);
+  --tq:#19A7A0; --tq-d:#0B7C77; --tq-l:#CDEDEA;
+  --pk:#E6397A; --pk-d:#C42462;
+  --mg:#F2B632; --mg-l:#FBE7B0;
+  --f-show:"Shrikhand","Cooper Black","Georgia",serif;
+  --f-body:"Rubik","Trebuchet MS","Segoe UI",sans-serif;
+  --max:1200px; --pad:clamp(16px,4.2vw,44px);
+}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 17.5px/1.55 var(--f-body);-webkit-font-smoothing:antialiased}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit}
+h1,h2,h3,p,ul,ol,figure,dl,dd{margin:0}
+ul,ol{padding:0;list-style:none}
+:focus-visible{outline:3px solid var(--pk-d);outline-offset:3px;border-radius:6px}
+.box{max-width:var(--max);margin:0 auto;padding:0 var(--pad)}
+.vh{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.show{font-family:var(--f-show);font-weight:400}
+.cash{font-variant-numeric:tabular-nums;white-space:nowrap}
+.nw{white-space:nowrap}
+h1,h2{text-wrap:balance}
+
+/* notice */
+.topnote{background:var(--ink);color:var(--paper);font:500 13px/1.45 var(--f-body)}
+.topnote .box{padding-top:9px;padding-bottom:9px}
+.topnote span{color:#CFC6B8}
+
+/* papel picado garland (the one ornament) */
+.picado{display:block;width:100%;height:54px}
+.picado--menu{position:absolute;left:0;right:0;top:0}
+
+/* masthead */
+.mast{background:var(--paper)}
+.mast__row{display:flex;align-items:center;gap:28px;padding-top:6px;padding-bottom:16px}
+.logo{display:flex;flex-direction:column;text-decoration:none;line-height:1;margin-right:auto}
+.logo b{font:400 32px/1 var(--f-show);letter-spacing:.005em}
+.logo b i{font-style:normal;color:var(--pk-d)}
+.logo small{margin-top:6px;font:700 11px/1 var(--f-body);letter-spacing:.24em;text-transform:uppercase;color:var(--tq-d)}
+.links{display:flex;gap:4px}
+.links a{display:flex;align-items:center;min-height:44px;padding:0 14px;border-radius:999px;text-decoration:none;font:600 16px/1 var(--f-body);transition:background-color .2s}
+.links a:hover{background:var(--mg-l)}
+.mast__tel{font:600 17px/1 var(--f-body);text-decoration:none;white-space:nowrap}
+.mast__tel:hover{text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:4px}
+.pill{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:50px;padding:0 24px;border-radius:999px;border:2.5px solid var(--ink);font:700 16px/1 var(--f-body);word-spacing:.08em;text-decoration:none;white-space:nowrap;transition:background-color .2s,color .2s,transform .2s}
+.pill--pk{background:var(--pk-d);color:#fff;border-color:var(--pk-d)}
+.pill--pk:hover{background:var(--ink);border-color:var(--ink)}
+.pill--ink{background:var(--ink);color:var(--paper)}
+.pill--ink:hover{background:var(--tq-d);border-color:var(--tq-d)}
+.pill--open{background:transparent;color:var(--ink)}
+.pill--open:hover{background:var(--mg)}
+
+/* opener (hero) */
+.opener{padding:26px 0 64px;overflow:hidden}
+.opener__grid{display:grid;grid-template-columns:minmax(0,1.22fr) minmax(0,1fr);gap:clamp(36px,5vw,72px);align-items:center}
+.where{display:inline-flex;align-items:center;gap:10px;padding:7px 14px 7px 8px;border:2px solid var(--ink);border-radius:999px;font:600 13px/1 var(--f-body);letter-spacing:.1em;text-transform:uppercase;background:#fff}
+.where i{width:22px;height:22px;border-radius:50%;background:var(--tq);box-shadow:inset 0 0 0 5px #fff,inset 0 0 0 7px var(--tq)}
+.opener h1{margin-top:22px;font:400 clamp(42px,5.3vw,68px)/1.04 var(--f-show);letter-spacing:.003em;word-spacing:.04em}
+.opener h1 .w1{color:var(--pk-d)}
+.opener h1 .w2{color:var(--tq-d)}
+.opener h1 .w3{display:inline-block;padding:0 .14em .04em;margin:.06em 0;background:var(--mg);border-radius:.18em;transform:rotate(-1.5deg)}
+.opener__sub{margin-top:22px;max-width:44ch;font-size:19px;line-height:1.5;color:var(--ink-2)}
+.opener__acts{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.ticket{display:inline-flex;align-items:center;gap:14px;margin-top:24px;padding:10px 20px 10px 16px;border:2px dashed rgba(27,27,27,.5);border-radius:14px;font:500 15.5px/1.35 var(--f-body)}
+.ticket b{font-weight:700}
+.ticket__t{display:flex;flex-direction:column;gap:2px}
+#todayLabel{color:var(--ink-2);font-size:14px;font-variant-numeric:tabular-nums}
+#statusDot{width:13px;height:13px;border-radius:50%;background:var(--ink);flex:none}
+#statusDot.is-open{background:var(--tq);box-shadow:0 0 0 4px var(--tq-l)}
+#statusDot.is-closing{background:var(--mg);box-shadow:0 0 0 4px var(--mg-l)}
+#statusDot.is-closed{background:var(--pk)}
+#statusDot.is-note{background:var(--ink-2)}
+.art{position:relative;padding:18px 10px 26px}
+.frame{transform:rotate(-2deg);border-radius:34px;border:12px solid var(--tq);box-shadow:0 0 0 3px var(--ink);overflow:hidden;background:var(--tq)}
+.frame img{width:100%;aspect-ratio:5/4;object-fit:cover;object-position:52% 50%;border-radius:22px}
+.sticker{position:absolute;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;border:3px solid var(--ink);line-height:1}
+.sticker--vegan{top:-8px;right:-4px;width:132px;height:132px;border-radius:50%;background:var(--mg);transform:rotate(11deg)}
+.sticker--vegan b{font:400 30px/1 var(--f-show)}
+.sticker--vegan small{margin-top:6px;font:700 12px/1.1 var(--f-body);letter-spacing:.12em;text-transform:uppercase}
+.sticker--days{left:-6px;bottom:4px;padding:12px 20px 13px;border-radius:16px;background:var(--pk-d);color:#fff;transform:rotate(-6deg);flex-direction:row;gap:10px}
+.sticker--days b{font:400 24px/1 var(--f-show)}
+.sticker--days small{font:700 13px/1.1 var(--f-body);letter-spacing:.1em;text-transform:uppercase;text-align:left}
+
+/* menu band (money block) */
+.carta{position:relative;background:var(--mg);padding:104px 0 72px;border-top:3px solid var(--ink);border-bottom:3px solid var(--ink)}
+.carta__head{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:20px 40px;align-items:end}
+.tag{display:inline-block;padding:7px 14px;border-radius:999px;background:var(--ink);color:var(--mg);font:700 13px/1 var(--f-body);letter-spacing:.16em;text-transform:uppercase}
+.carta h2{margin-top:16px;font:400 clamp(34px,4.4vw,58px)/1.04 var(--f-show);max-width:21ch;word-spacing:.04em}
+.carta__aside{max-width:300px;font:500 15.5px/1.45 var(--f-body)}
+.carta__aside b{display:block;font:400 26px/1.05 var(--f-show);margin-bottom:6px}
+.tiles{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:18px;margin-top:40px}
+.tile{grid-column:span 2;border:3px solid var(--ink);border-radius:26px;padding:24px 24px 18px;display:flex;flex-direction:column}
+.tile--wide{grid-column:span 3}
+.tile--tq{background:var(--tq)}
+.tile--pk{background:var(--pk-d);color:#fff}
+.tile--pa{background:var(--paper)}
+.tile--ink{background:var(--ink);color:var(--paper)}
+.tile h3{font:400 clamp(28px,2.6vw,34px)/1.05 var(--f-show)}
+.tile__base{margin-top:8px;font:400 15px/1.45 var(--f-body);opacity:.92}
+.tile__list{margin-top:16px;border-top:2px solid currentColor}
+.tile__list li{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:4px 14px;align-items:baseline;padding:11px 0;border-bottom:1.5px dashed color-mix(in srgb,currentColor 45%,transparent)}
+.tile__list li:last-child{border-bottom:0}
+.tile__list span{font:500 17.5px/1.3 var(--f-body)}
+.tile__list b{font:600 18px/1.3 var(--f-body);font-variant-numeric:tabular-nums;white-space:nowrap}
+.tile__list small{grid-column:1/-1;font:400 14.5px/1.4 var(--f-body);opacity:.85}
+.tile--ink .tile__list b{color:var(--mg)}
+.tile__cols{display:grid;grid-template-columns:minmax(0,1fr) 74px 74px;gap:0 10px}
+.tile__list.tile__cols li{grid-column:1/-1;display:grid;grid-template-columns:subgrid}
+.tile__th{margin-top:16px;padding-bottom:6px;font:700 12px/1 var(--f-body);letter-spacing:.14em;text-transform:uppercase}
+.tile__th span:not(:first-child){text-align:right}
+.tile__th+.tile__list{margin-top:0}
+.tile__cols b{text-align:right}
+.carta__foot{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px 28px;margin-top:30px}
+.carta__note{font:500 15px/1.45 var(--f-body);max-width:52ch}
+.carta__note::before{content:"";display:inline-block;width:10px;height:10px;margin-right:10px;border-radius:50%;background:var(--ink);vertical-align:1px}
+
+/* plates from the kitchen */
+.cocina{padding:84px 0 96px}
+.cocina__head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:end;gap:14px 40px}
+.cocina h2,.visit h2{font:400 clamp(34px,4.2vw,54px)/1.04 var(--f-show);word-spacing:.04em}
+.cocina h2 em{font-style:normal;color:var(--tq-d)}
+.kicker{font:700 13px/1 var(--f-body);letter-spacing:.18em;text-transform:uppercase;color:var(--pk-d);margin-bottom:14px}
+.src{font:500 14px/1.4 var(--f-body);color:var(--ink-2);padding:8px 14px;border:2px solid var(--rule);border-radius:999px}
+.platos{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:52px clamp(28px,4vw,56px);margin-top:48px}
+.plato:nth-child(3n+2){margin-top:64px}
+.plato:nth-child(3n+3){margin-top:22px}
+.plato__pic{position:relative;width:min(100%,300px)}
+.plato__pic img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:50%;border:3px solid var(--ink);transition:transform .5s cubic-bezier(.2,.7,.3,1)}
+.plato:hover .plato__pic img{transform:scale(1.045)}
+.price{position:absolute;right:-8px;top:8px;display:flex;align-items:center;justify-content:center;width:86px;height:86px;border-radius:50%;border:3px solid var(--ink);background:var(--mg);font:700 17px/1 var(--f-body);font-variant-numeric:tabular-nums;transform:rotate(8deg)}
+.plato:nth-child(even) .price{background:var(--pk-d);color:#fff;transform:rotate(-7deg)}
+.plato h3{margin-top:20px;font:700 20px/1.25 var(--f-body)}
+.plato h3 span{display:inline-block;margin-left:8px;padding:3px 9px;border-radius:999px;background:var(--tq-l);font:600 11.5px/1.3 var(--f-body);letter-spacing:.1em;text-transform:uppercase;vertical-align:3px}
+.plato p{margin-top:6px;max-width:34ch;font-size:15.5px;line-height:1.5;color:var(--ink-2)}
+
+/* fillings band */
+.fill{background:var(--tq);border-top:3px solid var(--ink);border-bottom:3px solid var(--ink);padding:60px 0}
+.fill__grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:36px 56px;align-items:center}
+.fill h2{font:400 clamp(30px,3.6vw,46px)/1.06 var(--f-show);word-spacing:.04em}
+.fill p{margin-top:14px;max-width:40ch;font-size:17.5px}
+.fill__stk{display:flex;flex-wrap:wrap;gap:16px 14px;justify-content:flex-start}
+.fill__stk li{display:inline-flex;flex-direction:column;justify-content:center;padding:14px 22px 15px;border:3px solid var(--ink);border-radius:20px;line-height:1}
+.fill__stk b{font:400 27px/1 var(--f-show)}
+.fill__stk small{margin-top:6px;font:700 12px/1 var(--f-body);letter-spacing:.14em;text-transform:uppercase}
+.fill__stk li:nth-child(1){background:var(--pk-d);color:#fff;transform:rotate(-4deg)}
+.fill__stk li:nth-child(2){background:var(--mg);transform:rotate(3deg)}
+.fill__stk li:nth-child(3){background:var(--paper);transform:rotate(-2deg)}
+.fill__stk li:nth-child(4){background:var(--ink);color:var(--paper);transform:rotate(4deg)}
+.fill__stk li:nth-child(5){background:#fff;transform:rotate(-3deg)}
+
+/* visit */
+.visit{padding:84px 0 96px}
+.visit__grid{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:28px;margin-top:36px;align-items:stretch}
+.card-addr{background:var(--pk-d);color:#fff;border:3px solid var(--ink);border-radius:30px;padding:34px 36px 32px;display:flex;flex-direction:column}
+.card-addr .street{font:400 clamp(38px,4.4vw,58px)/1 var(--f-show)}
+.card-addr .city{margin-top:10px;font:500 19px/1.3 var(--f-body)}
+.card-addr dl{margin-top:28px;display:grid;gap:12px}
+.card-addr dl div{display:grid;grid-template-columns:110px minmax(0,1fr);gap:12px;align-items:baseline;padding-top:12px;border-top:1.5px dashed rgba(255,255,255,.45)}
+.card-addr dt{font:700 12px/1.3 var(--f-body);letter-spacing:.16em;text-transform:uppercase;opacity:.85}
+.card-addr dd{font:600 20px/1.3 var(--f-body)}
+.card-addr dd a{text-decoration:none}
+.card-addr dd a:hover{text-decoration:underline;text-underline-offset:4px;text-decoration-thickness:1px}
+.card-addr__acts{display:flex;flex-wrap:wrap;gap:12px;margin-top:auto;padding-top:30px}
+.pill--light{background:var(--paper);color:var(--ink);border-color:var(--paper)}
+.pill--light:hover{background:var(--mg);border-color:var(--mg)}
+.pill--ghost{background:transparent;color:#fff;border-color:rgba(255,255,255,.7)}
+.pill--ghost:hover{border-color:#fff;background:rgba(0,0,0,.12)}
+.week{background:#fff;border:3px solid var(--ink);border-radius:30px;padding:28px 30px 24px}
+.week h3{font:400 30px/1 var(--f-show)}
+.week table{width:100%;margin-top:18px;border-collapse:collapse;font-variant-numeric:tabular-nums}
+.week th,.week td{padding:11px 12px;text-align:left;font-size:17px}
+.week th{font-weight:500}
+.week td{text-align:right;font-weight:600;white-space:nowrap}
+.week td.shut{font-weight:400;color:var(--ink-2)}
+.week tr+tr th,.week tr+tr td{border-top:1.5px dashed var(--rule)}
+.week tr[data-today] th,.week tr[data-today] td{background:var(--mg);border-top-color:transparent}
+.week tr[data-today] th{border-radius:12px 0 0 12px;font-weight:700}
+.week tr[data-today] td{border-radius:0 12px 12px 0}
+.week tr[data-today] th::after{content:"dnes";margin-left:10px;padding:3px 8px;border-radius:999px;background:var(--ink);color:var(--mg);font:700 11px/1 var(--f-body);letter-spacing:.12em;text-transform:uppercase;vertical-align:2px}
+.week tr[data-today]+tr th,.week tr[data-today]+tr td{border-top-color:transparent}
+.week p{margin-top:16px;font-size:15px;color:var(--ink-2)}
+
+/* footer */
+.foot{background:var(--ink);color:var(--paper);padding:56px 0 34px}
+.foot__grid{display:grid;grid-template-columns:minmax(0,1.4fr) repeat(3,minmax(0,1fr));gap:32px}
+.foot__brand b{display:block;font:400 42px/1 var(--f-show);color:var(--mg)}
+.foot__brand p{margin-top:12px;max-width:30ch;color:#D8D0C3;font-size:16px}
+.foot h3{font:700 12px/1 var(--f-body);letter-spacing:.18em;text-transform:uppercase;color:var(--tq)}
+.foot ul{margin-top:14px;display:grid;gap:6px;font-size:16px;font-variant-numeric:tabular-nums}
+.foot a{text-decoration:none}
+.foot a:hover{color:var(--mg)}
+.foot__legal{margin-top:44px;padding-top:18px;border-top:1.5px dashed rgba(252,246,235,.25);display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px 24px;font-size:14px;color:#BDB4A6}
+
+.actionbar{display:none}
+
+@media (max-width:1060px){
+  .links a{padding:0 10px}
+  .mast__tel{display:none}
+  .tiles{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .tile,.tile--wide{grid-column:span 1}
+  .tile--last{grid-column:1/-1}
+}
+@media (max-width:880px){
+  .mast__row{flex-wrap:wrap;gap:8px 16px}
+  .links{order:3;width:100%;margin:0 -10px}
+  .mast .pill{display:none}
+  .mast__tel{display:inline-flex;align-items:center;min-height:44px;padding:0 16px;border:2.5px solid var(--ink);border-radius:999px;font-size:15.5px}
+  .opener__grid{grid-template-columns:1fr}
+  .art{max-width:560px}
+  .carta__head{grid-template-columns:1fr}
+  .platos{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .plato:nth-child(n){margin-top:0}
+  .plato:nth-child(even){margin-top:48px}
+  .fill__grid,.visit__grid{grid-template-columns:1fr}
+  .foot__grid{grid-template-columns:1fr 1fr}
+  .foot__brand{grid-column:1/-1}
+}
+@media (max-width:760px){
+  body{padding-bottom:calc(66px + env(safe-area-inset-bottom))}
+  .picado{height:44px}
+  .logo b{font-size:27px}
+  .opener{padding:16px 0 46px}
+  .opener h1{font-size:clamp(38px,10.6vw,54px)}
+  .opener__sub{font-size:17.5px}
+  .opener__acts .pill{flex:1 1 auto}
+  .art{padding:22px 4px 26px;margin-top:6px}
+  .frame{border-width:9px;border-radius:26px}
+  .frame img{border-radius:17px}
+  .sticker--vegan{width:104px;height:104px;top:0;right:0}
+  .sticker--vegan b{font-size:24px}
+  .sticker--vegan small{font-size:10.5px}
+  .sticker--days{left:0;bottom:6px;padding:9px 14px 10px}
+  .sticker--days b{font-size:19px}
+  .sticker--days small{font-size:11px}
+  .carta{padding:78px 0 52px}
+  .tiles{grid-template-columns:1fr;gap:14px;margin-top:28px}
+  .tile--last{grid-column:auto}
+  .tile{padding:20px 18px 12px;border-radius:22px}
+  .tile__cols{grid-template-columns:minmax(0,1fr) 62px 62px;gap:0 6px}
+  .carta__foot .pill{width:100%}
+  .cocina,.visit{padding:56px 0 64px}
+  .platos{gap:34px 16px;margin-top:32px}
+  .plato:nth-child(even){margin-top:40px}
+  .price{width:auto;height:34px;padding:0 10px;border-radius:999px;border-width:2.5px;font-size:14.5px;right:-4px;top:2px}
+  .plato h3{font-size:17px;margin-top:14px}
+  .plato h3 span{display:table;margin:6px 0 0}
+  .plato p{font-size:14.5px}
+  .fill{padding:44px 0 48px}
+  .fill__stk li{padding:11px 16px 12px}
+  .fill__stk b{font-size:22px}
+  .card-addr{padding:26px 20px 22px;border-radius:24px}
+  .card-addr dl div{grid-template-columns:1fr;gap:2px}
+  .card-addr__acts .pill{flex:1 1 auto}
+  .week{padding:22px 14px 18px;border-radius:24px}
+  .week th,.week td{padding:10px 8px;font-size:16px}
+  .foot__grid{grid-template-columns:1fr}
+  .actionbar{display:grid;grid-template-columns:1fr 1fr;position:fixed;left:0;right:0;bottom:0;z-index:30;background:var(--ink);padding:8px 10px calc(8px + env(safe-area-inset-bottom));gap:8px}
+  .actionbar a{display:flex;align-items:center;justify-content:center;min-height:50px;border-radius:999px;font:700 16px/1 var(--f-body);text-decoration:none}
+  .actionbar a:first-child{background:var(--pk-d);color:#fff}
+  .actionbar a:last-child{background:var(--mg);color:var(--ink)}
+}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{transition:none!important;scroll-behavior:auto!important}}
+</style>
+
+<div class="topnote" role="note"><div class="box">Neoficiálny návrh — nie je to oficiálny web podniku <span>· ukážka od webdavid.sk, objednávky ani rezervácie tu nefungujú</span></div></div>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs><pattern id="picado" width="156" height="54" patternUnits="userSpaceOnUse"><path d="M0 3Q78 17 156 3" fill="none" stroke="#1B1B1B" stroke-width="1.6"/><path fill="#19A7A0" fill-rule="evenodd" transform="rotate(-5 26 5.9)" d="M6 5.9H46V37.9L42 44.9L38 37.9L34 44.9L30 37.9L26 44.9L22 37.9L18 44.9L14 37.9L10 44.9L6 37.9ZM26 11.9l6 7-6 7-6-7zM14 16.4a2.5 2.5 0 1 0 .01 0zM38 16.4a2.5 2.5 0 1 0 .01 0zM11 29.9h6l-3 4zM23 29.9h6l-3 4zM35 29.9h6l-3 4z"/><path fill="#E6397A" fill-rule="evenodd" transform="rotate(1.5 78 9.0)" d="M58 9.0H98V41.0L94 48.0L90 41.0L86 48.0L82 41.0L78 48.0L74 41.0L70 48.0L66 41.0L62 48.0L58 41.0ZM78 15.0l6 7-6 7-6-7zM66 19.5a2.5 2.5 0 1 0 .01 0zM90 19.5a2.5 2.5 0 1 0 .01 0zM63 33.0h6l-3 4zM75 33.0h6l-3 4zM87 33.0h6l-3 4z"/><path fill="#F2B632" fill-rule="evenodd" transform="rotate(5 130 5.9)" d="M110 5.9H150V37.9L146 44.9L142 37.9L138 44.9L134 37.9L130 44.9L126 37.9L122 44.9L118 37.9L114 44.9L110 37.9ZM130 11.9l6 7-6 7-6-7zM118 16.4a2.5 2.5 0 1 0 .01 0zM142 16.4a2.5 2.5 0 1 0 .01 0zM115 29.9h6l-3 4zM127 29.9h6l-3 4zM139 29.9h6l-3 4z"/></pattern><pattern id="picado-b" width="156" height="54" patternUnits="userSpaceOnUse"><path d="M0 3Q78 17 156 3" fill="none" stroke="#1B1B1B" stroke-width="1.6"/><path fill="#19A7A0" fill-rule="evenodd" transform="rotate(-5 26 5.9)" d="M6 5.9H46V37.9L42 44.9L38 37.9L34 44.9L30 37.9L26 44.9L22 37.9L18 44.9L14 37.9L10 44.9L6 37.9ZM26 11.9l6 7-6 7-6-7zM14 16.4a2.5 2.5 0 1 0 .01 0zM38 16.4a2.5 2.5 0 1 0 .01 0zM11 29.9h6l-3 4zM23 29.9h6l-3 4zM35 29.9h6l-3 4z"/><path fill="#E6397A" fill-rule="evenodd" transform="rotate(1.5 78 9.0)" d="M58 9.0H98V41.0L94 48.0L90 41.0L86 48.0L82 41.0L78 48.0L74 41.0L70 48.0L66 41.0L62 48.0L58 41.0ZM78 15.0l6 7-6 7-6-7zM66 19.5a2.5 2.5 0 1 0 .01 0zM90 19.5a2.5 2.5 0 1 0 .01 0zM63 33.0h6l-3 4zM75 33.0h6l-3 4zM87 33.0h6l-3 4z"/><path fill="#FCF6EB" fill-rule="evenodd" transform="rotate(5 130 5.9)" d="M110 5.9H150V37.9L146 44.9L142 37.9L138 44.9L134 37.9L130 44.9L126 37.9L122 44.9L118 37.9L114 44.9L110 37.9ZM130 11.9l6 7-6 7-6-7zM118 16.4a2.5 2.5 0 1 0 .01 0zM142 16.4a2.5 2.5 0 1 0 .01 0zM115 29.9h6l-3 4zM127 29.9h6l-3 4zM139 29.9h6l-3 4z"/></pattern></defs></svg>
+
+<header class="mast">
+  <svg class="picado" aria-hidden="true" focusable="false"><rect width="100%" height="100%" fill="url(#picado)"/></svg>
+  <div class="box mast__row">
+    <a class="logo" href="#uvod" aria-label="Loco Taco — na začiatok"><b>Loco <i>Taco</i></b><small>Mexican bistro</small></a>
+    <nav class="links" aria-label="Hlavná navigácia">
+      <a href="#menu">Menu</a><a href="#kuchyna">Z kuchyne</a><a href="#kontakt">Kontakt</a>
+    </nav>
+    <a class="mast__tel cash" href="tel:+421918040575">0918 040 575</a>
+    <a class="pill pill--pk" href="tel:+421918040575">Objednať telefonicky</a>
+  </div>
+</header>
+
+<main id="uvod">
+  <section class="opener" aria-labelledby="h1">
+    <div class="box opener__grid">
+      <div>
+        <p class="where"><i aria-hidden="true"></i>Mexické bistro · Kapitulská 15</p>
+        <h1 id="h1"><span class="w1">Burrito,</span> <span class="w2">tacos</span> a <span class="w3">quesadilla</span> na Kapitulskej.</h1>
+        <p class="opener__sub">Skvelá mexická kuchyňa v centre Banskej Bystrice. Hovädzie, kuracie, vege s&nbsp;halloumi aj vegan s&nbsp;kaktusom.</p>
+        <div class="opener__acts">
+          <a class="pill pill--ink" href="#menu">Pozrieť menu</a>
+          <a class="pill pill--open" href="tel:+421918040575">Zavolať 0918 040 575</a>
+        </div>
+        <p class="ticket" aria-live="polite"><i id="statusDot"></i><span class="ticket__t"><span id="statusText">Otváracie hodiny nižšie</span><span id="todayLabel"></span></span></p>
+      </div>
+      <div class="art">
+        <div class="frame"><img src="assets/hero.webp" width="1600" height="900" alt="Tacos, burrito a quesadilla od Loco Taco na stole" fetchpriority="high"></div>
+        <p class="sticker sticker--vegan"><b>vegan</b><small>s kaktusom</small></p>
+        <p class="sticker sticker--days"><b>Út – So</b><small>od<br>11:00</small></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="carta" id="menu" aria-labelledby="h-menu">
+    <svg class="picado picado--menu" aria-hidden="true" focusable="false"><rect width="100%" height="100%" fill="url(#picado-b)"/></svg>
+    <div class="box">
+      <div class="carta__head">
+        <div>
+          <span class="tag">Menu</span>
+          <h2 id="h-menu">Vyberte si náplň: hovädzie, kuracie, halloumi alebo kaktus.</h2>
+        </div>
+        <p class="carta__aside"><b>Út – So od 11:00</b>Objednávky telefonicky na 0918 040 575, rozvoz cez Wolt.</p>
+      </div>
+
+      <div class="tiles">
+        <article class="tile tile--tq">
+          <h3>Burrito bowl</h3>
+          <p class="tile__base">paradajková ryža, fazuľa, kukurica, guacamole, pico de gallo</p>
+          <ul class="tile__list">
+            <li><span>Hovädzia</span><b>11,50 €</b></li>
+            <li><span>Kuracia</span><b>10,50 €</b></li>
+            <li><span>Vegan (kaktus)</span><b>11,50 €</b></li>
+            <li><span>Vege (halloumi)</span><b>11,50 €</b></li>
+          </ul>
+        </article>
+        <article class="tile tile--pk">
+          <h3>Burrito</h3>
+          <p class="tile__base">ryža, fazuľa, tri-color šalát, guacamole, mix syrov</p>
+          <ul class="tile__list">
+            <li><span>Hovädzie</span><b>12,60 €</b></li>
+            <li><span>Kuracie</span><b>11,40 €</b></li>
+            <li><span>Vege (halloumi)</span><b>12,60 €</b></li>
+            <li><span>Vege (kaktus)</span><b>12,60 €</b></li>
+          </ul>
+        </article>
+        <article class="tile tile--pa">
+          <h3>Quesadilla</h3>
+          <p class="tile__base">mix syrov, tri-color paprika, kukurica, nachos</p>
+          <ul class="tile__list">
+            <li><span>Hovädzia</span><b>12,60 €</b></li>
+            <li><span>Kuracia</span><b>11,40 €</b></li>
+            <li><span>Syrová</span><b>10,20 €</b></li>
+            <li><span>Vegan (kaktus)</span><b>11,60 €</b></li>
+            <li><span>Vege (halloumi)</span><b>11,60 €</b></li>
+          </ul>
+        </article>
+        <article class="tile tile--ink tile--wide">
+          <h3>Tacos</h3>
+          <p class="tile__base">pico de gallo, tri-color šalát, mozzarella, guacamole</p>
+          <div class="tile__th tile__cols" aria-hidden="true"><span></span><span>2 ks</span><span>3 ks</span></div>
+          <ul class="tile__list tile__cols">
+            <li><span>Hovädzie</span><b><span class="vh">2 ks </span>9,90 €</b><b><span class="vh">3 ks </span>11,70 €</b></li>
+            <li><span>Kuracie</span><b><span class="vh">2 ks </span>8,60 €</b><b><span class="vh">3 ks </span>10,40 €</b></li>
+            <li><span>Vege halloumi</span><b><span class="vh">2 ks </span>9,90 €</b><b><span class="vh">3 ks </span>11,70 €</b></li>
+            <li><span>Vege kaktus</span><b><span class="vh">2 ks </span>9,90 €</b><b><span class="vh">3 ks </span>11,70 €</b></li>
+          </ul>
+        </article>
+        <article class="tile tile--tq tile--wide tile--last">
+          <h3>Polievka a dezert</h3>
+          <ul class="tile__list">
+            <li><span>HULA BULA polievka 0,3 l</span><b>4,50 €</b><small>fazuľa, mleté mäso, mrkva, zeler, paprika</small></li>
+            <li><span>Churros 2 ks / 3 ks</span><b>6,90 / 8,90 €</b><small>vanilková zmrzlina, karamel, čerstvé bobule</small></li>
+          </ul>
+        </article>
+      </div>
+
+      <div class="carta__foot">
+        <p class="carta__note">Ceny podľa ponuky Loco Taco na Wolt (25. 9. 2026).</p>
+        <a class="pill pill--ink" href="tel:+421918040575">Objednať telefonicky</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="cocina" id="kuchyna" aria-labelledby="h-kuchyna">
+    <div class="box">
+      <div class="cocina__head">
+        <div>
+          <p class="kicker">Z kuchyne</p>
+          <h2 id="h-kuchyna">Burrito, tacos aj churros na <em>tyrkysovom</em> tanieri.</h2>
+        </div>
+        <p class="src">Ceny podľa Wolt</p>
+      </div>
+      <ul class="platos">
+        <li class="plato">
+          <div class="plato__pic"><img src="assets/burrito-bowl.webp" width="640" height="640" alt="Burrito bowl s hovädzím, kukuricou, fazuľou a nachos na tyrkysovom tanieri" loading="lazy"><span class="price">11,50&nbsp;€</span></div>
+          <h3>Burrito bowl hovädzia</h3>
+          <p>paradajková ryža, fazuľa, kukurica, cheddar a mozzarella, guacamole, pico de gallo</p>
+        </li>
+        <li class="plato">
+          <div class="plato__pic"><img src="assets/burrito.webp" width="640" height="640" alt="Prekrojené hovädzie burrito s dvoma salsami a nachos" loading="lazy"><span class="price">12,60&nbsp;€</span></div>
+          <h3>Burrito hovädzie</h3>
+          <p>paradajková ryža, fazuľa, tri-color šalát, guacamole, chipotle</p>
+        </li>
+        <li class="plato">
+          <div class="plato__pic"><img src="assets/quesadilla.webp" width="640" height="640" alt="Hovädzia quesadilla s dipom, limetkou a nachos" loading="lazy"><span class="price">12,60&nbsp;€</span></div>
+          <h3>Quesadilla hovädzia</h3>
+          <p>mix syrov, tri-color paprika, kukurica, reďkovka, nachos</p>
+        </li>
+        <li class="plato">
+          <div class="plato__pic"><img src="assets/tacos.webp" width="640" height="640" alt="Dve hovädzie tacos so salsami a limetkou" loading="lazy"><span class="price">9,90&nbsp;€</span></div>
+          <h3>Tacos hovädzie 2&nbsp;ks</h3>
+          <p>pico de gallo, tri-color šalát, mozzarella, guacamole, koriander</p>
+        </li>
+        <li class="plato">
+          <div class="plato__pic"><img src="assets/hula-bula.webp" width="640" height="640" alt="Polievka HULA BULA s fazuľou a mletým mäsom v tanieri" loading="lazy"><span class="price">4,50&nbsp;€</span></div>
+          <h3>HULA BULA polievka</h3>
+          <p>výdatná mexická polievka s mixom fazule a mletým mäsom · 0,3 l</p>
+        </li>
+        <li class="plato">
+          <div class="plato__pic"><img src="assets/churros.webp" width="640" height="640" alt="Churros s vanilkovou zmrzlinou, karamelom a bobuľami" loading="lazy"><span class="price">6,90&nbsp;€</span></div>
+          <h3>Churros 2&nbsp;ks <span>dezert</span></h3>
+          <p>chrumkavé churros s vanilkovou zmrzlinou, karamelom a bobuľami</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="fill" aria-labelledby="h-fill">
+    <div class="box fill__grid">
+      <div>
+        <h2 id="h-fill">Vege aj vegan — <span class="nw">s halloumi</span> alebo <span class="nw">s kaktusom.</span></h2>
+        <p>Každá hlavná položka v menu má mäsovú aj bezmäsitú náplň. Rozvoz cez Wolt.</p>
+      </div>
+      <ul class="fill__stk" aria-label="Náplne v menu">
+        <li><b>Hovädzie</b><small>mäso</small></li>
+        <li><b>Kuracie</b><small>mäso</small></li>
+        <li><b>Halloumi</b><small>vege</small></li>
+        <li><b>Kaktus</b><small>vegan · vege</small></li>
+        <li><b>Syrová</b><small>quesadilla</small></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="visit" id="kontakt" aria-labelledby="h-kontakt">
+    <div class="box">
+      <p class="kicker">Kontakt</p>
+      <h2 id="h-kontakt">Tacos a burrito na <span class="nw">Kapitulskej 15.</span></h2>
+      <div class="visit__grid">
+        <div class="card-addr">
+          <p class="street">Kapitulská 15</p>
+          <p class="city">974 01 Banská Bystrica</p>
+          <dl>
+            <div><dt>Telefón</dt><dd><a class="cash" href="tel:+421918040575">0918 040 575</a></dd></div>
+            <div><dt>Objednávky</dt><dd>telefonicky</dd></div>
+            <div><dt>Rozvoz</dt><dd>Wolt</dd></div>
+          </dl>
+          <div class="card-addr__acts">
+            <a class="pill pill--light" href="tel:+421918040575">Zavolať</a>
+            <a class="pill pill--ghost" href="https://www.google.com/maps/search/?api=1&amp;query=Loco%20Taco%2C%20Kapitulsk%C3%A1%2015%2C%20Bansk%C3%A1%20Bystrica" rel="noopener">Otvoriť v Mapách ↗</a>
+          </div>
+        </div>
+        <div class="week">
+          <h3>Otvorené</h3>
+          <table>
+            <caption class="vh">Otváracie hodiny</caption>
+            <tbody>
+              <tr data-day="1"><th scope="row">Pondelok</th><td class="shut">zatvorené</td></tr>
+              <tr data-day="2"><th scope="row">Utorok</th><td>11:00 – 18:45</td></tr>
+              <tr data-day="3"><th scope="row">Streda</th><td>11:00 – 18:45</td></tr>
+              <tr data-day="4"><th scope="row">Štvrtok</th><td>11:00 – 18:45</td></tr>
+              <tr data-day="5"><th scope="row">Piatok</th><td>11:00 – 20:45</td></tr>
+              <tr data-day="6"><th scope="row">Sobota</th><td>11:00 – 20:45</td></tr>
+              <tr data-day="0"><th scope="row">Nedeľa</th><td class="shut">zatvorené</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="box">
+    <div class="foot__grid">
+      <div class="foot__brand"><b>Loco Taco</b><p>Skvelá mexická kuchyňa v centre Banskej Bystrice.</p></div>
+      <div><h3>Menu</h3><ul><li><a href="#menu">Celé menu</a></li><li><a href="#kuchyna">Z kuchyne</a></li></ul></div>
+      <div><h3>Kontakt</h3><ul><li>Kapitulská 15, Banská Bystrica</li><li><a href="tel:+421918040575">0918 040 575</a></li><li><a href="#kontakt">Mapa a hodiny</a></li></ul></div>
+      <div><h3>Otvorené</h3><ul><li>Út – Št 11:00 – 18:45</li><li>Pi – So 11:00 – 20:45</li><li>Po, Ne zatvorené</li></ul></div>
+    </div>
+    <p class="foot__legal"><span>Neoficiálny návrh webu · webdavid.sk · 2026</span><span>Ceny podľa ponuky na Wolt</span></p>
+  </div>
+</footer>
+
+<nav class="actionbar" aria-label="Rýchle akcie">
+  <a href="tel:+421918040575">Zavolať</a>
+  <a href="#menu">Menu</a>
+</nav>
+
+<script>
+(function(){
+  "use strict";
+  var HOURS = {2:[[660,1125]],3:[[660,1125]],4:[[660,1125]],5:[[660,1245]],6:[[660,1245]]};
+  var NOTES = {};
+  var W = {open:"Teraz otvorené", closing:"Zatvárame o", closed:"Zatvorené", next:"otvárame"};
+  var ACC = ["v nedeľu","v pondelok","v utorok","v stredu","vo štvrtok","v piatok","v sobotu"];
+  function now(){
+    try{
+      var p = new Intl.DateTimeFormat("en-GB",{timeZone:"Europe/Bratislava",weekday:"short",hour:"2-digit",minute:"2-digit",hour12:false}).formatToParts(new Date());
+      var m = {}; p.forEach(function(x){ m[x.type] = x.value; });
+      return { day:{Sun:0,Mon:1,Tue:2,Wed:3,Thu:4,Fri:5,Sat:6}[m.weekday], mins:(parseInt(m.hour,10)%24)*60 + parseInt(m.minute,10) };
+    }catch(err){ var d = new Date(); return { day:d.getDay(), mins:d.getHours()*60 + d.getMinutes() }; }
+  }
+  function hm(t){ if(t >= 1440) return "polnoci"; var h = Math.floor(t/60), m = t%60; return h + ":" + (m<10?"0":"") + m; }
+  function status(n){
+    var spans = HOURS[n.day] || [], prev = HOURS[(n.day+6)%7] || [];
+    for(var j=0;j<prev.length;j++){ if(prev[j][1] > 1440 && n.mins < prev[j][1]-1440) return {open:true, end:prev[j][1]-1440}; }
+    for(var i=0;i<spans.length;i++){ if(n.mins >= spans[i][0] && n.mins < spans[i][1]) return {open:true, end:spans[i][1]}; }
+    for(var k=0;k<spans.length;k++){ if(spans[k][0] > n.mins) return {open:false, when:"dnes o " + hm(spans[k][0])}; }
+    for(var d=1; d<=7; d++){ var dd = (n.day+d)%7, s = HOURS[dd]; if(s && s.length) return {open:false, when:(d===1 ? "zajtra" : ACC[dd]) + " o " + hm(s[0][0])}; }
+    return {open:false, when:""};
+  }
+  function render(){
+    var n = now(), dot = document.getElementById("statusDot"), text = document.getElementById("statusText");
+    if(HOURS && dot && text){
+      var st = status(n);
+      if(st.open){
+        var left = st.end - n.mins;
+        if(left <= 60){ dot.className = "is-closing"; text.innerHTML = W.closing + " " + hm(st.end) + " · <b>ešte " + left + " min</b>"; }
+        else { dot.className = "is-open"; text.innerHTML = W.open + " · <b>do " + hm(st.end) + "</b>"; }
+      }else{
+        var note = NOTES[n.day], noted = note && !(HOURS[n.day]||[]).length;
+        dot.className = noted ? "is-note" : "is-closed";
+        text.innerHTML = noted ? "Dnes " + note : W.closed + (st.when ? " · <b>" + W.next + " " + st.when + "</b>" : "");
+      }
+    }
+    var label = document.getElementById("todayLabel");
+    if(HOURS && label && !label.textContent){
+      var s = HOURS[n.day] || [];
+      if(s.length) label.textContent = "Dnes " + s.map(function(x){ return hm(x[0]) + "–" + (x[1] >= 1440 ? "0:00" : hm(x[1])); }).join(", ");
+      else if(!NOTES[n.day]) label.textContent = "Dnes zatvorené";
+    }
+    [].forEach.call(document.querySelectorAll('[data-day="' + n.day + '"]'), function(r){ r.setAttribute("data-today",""); });
+  }
+  render(); setInterval(render, 60000);
+})();
+</script>
